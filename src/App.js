@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import PortfolioList from './components/PortfolioList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Portfolio List</h1>
+      <PortfolioList/>
     </div>
   );
 }
 
 export default App;
+
+
+// can have a single input area where the user will add stock symbols, amount of shares, and date bought
+// will have a button that will "add" to the list of stocks in the portfolio
+// once finished adding stocks to the portfolio will then hit a button to submit
+// once submitted will return the stocks historical price, current price, portolfio allocation, and 
+// initial/ending balance for portfolio
