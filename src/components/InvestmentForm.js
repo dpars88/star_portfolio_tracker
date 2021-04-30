@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-function InvestmentForm({ onSubmit, edit} ) {
+function InvestmentForm({ onSubmit } ) {
         const [input, setInput] = useState({
             symbol: "",
-            shares: "",
-            date: ""
+            shares: ""
         });
 
         const handleChange = e => {
@@ -24,8 +23,7 @@ function InvestmentForm({ onSubmit, edit} ) {
             });
             setInput({
                 symbol: "",
-                shares: "",
-                date: ""
+                shares: ""
             });
         }
     
@@ -51,17 +49,6 @@ function InvestmentForm({ onSubmit, edit} ) {
                             value={input.shares}
                             onChange={handleChange}
                             name='shares'
-                        />
-                    </label>
-                    <br></br>
-                    <label>
-                        Date: 
-                        <input
-                            type='text'
-                            placeHolder='YYYY-MM-DD'
-                            value={input.date}
-                            onChange={handleChange}
-                            name='date'
                         />
                     </label>
                     <br></br>

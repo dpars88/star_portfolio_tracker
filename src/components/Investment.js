@@ -21,21 +21,18 @@ function Investment({ investments, removeInvestment, updateInvestment }) {
     }
 
     return investments.map((investment, index) => {
-        return <div key={index}>
+        return (
+        <div key={index}>
             Symbol: {investment.value.symbol}
             <br></br>
             Shares: {investment.value.shares}
-            <br></br>
-            Bought: {investment.value.date}
             <div>
                 <button onClick={() => removeInvestment(investment.id)}>
                     Delete
                 </button>
-                {/* <button onClick={() => setEdit({ id: investment.id, value: investment.value})}>
-                    Edit
-                </button> */}
             </div>
         </div>
+        )
     })
 };
 
